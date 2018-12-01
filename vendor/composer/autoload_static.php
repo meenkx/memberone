@@ -20,10 +20,10 @@ class ComposerStaticInit1c76c97540b8c63aff4b796703394d1e
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '28bc0419bfd223560e5a415e961bb598' => __DIR__ . '/..' . '/alexwijn/laravel-select2/helpers.php',
         '0b47d6d4a00ca9112ba3953b49e7c9a4' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/helper.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
         'a806c12c6e24e7e4e900847766218dba' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/functions.php',
+        '28bc0419bfd223560e5a415e961bb598' => __DIR__ . '/..' . '/alexwijn/laravel-select2/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (

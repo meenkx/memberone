@@ -2083,70 +2083,6 @@
         ]
     },
     {
-        "name": "alexwijn/laravel-select2",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Alexwijn/laravel-select2.git",
-            "reference": "756d14c2de4a3d8613cae7a775673ae599d3729c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Alexwijn/laravel-select2/zipball/756d14c2de4a3d8613cae7a775673ae599d3729c",
-            "reference": "756d14c2de4a3d8613cae7a775673ae599d3729c",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
-            "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
-            "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
-            "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
-            "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
-            "php": "^7.1"
-        },
-        "require-dev": {
-            "orchestra/testbench": "~3.5"
-        },
-        "time": "2018-11-23T07:08:17+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.1-dev"
-            },
-            "laravel": {
-                "providers": [
-                    "Alexwijn\\Select2\\Select2ServiceProvider"
-                ]
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Alexwijn\\Select2\\": "src/"
-            },
-            "files": [
-                "helpers.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "Apache-2.0"
-        ],
-        "authors": [
-            {
-                "name": "Alex Wijnholds",
-                "email": "info@asclub.eu"
-            }
-        ],
-        "description": "jQuery Select2 API for Laravel 5",
-        "keywords": [
-            "jquery",
-            "laravel",
-            "select2"
-        ]
-    },
-    {
         "name": "bacon/bacon-qr-code",
         "version": "1.0.3",
         "version_normalized": "1.0.3.0",
@@ -5297,6 +5233,70 @@
             "laravel",
             "notifier",
             "sweet"
+        ]
+    },
+    {
+        "name": "alexwijn/laravel-select2",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Alexwijn/laravel-select2.git",
+            "reference": "756d14c2de4a3d8613cae7a775673ae599d3729c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Alexwijn/laravel-select2/zipball/756d14c2de4a3d8613cae7a775673ae599d3729c",
+            "reference": "756d14c2de4a3d8613cae7a775673ae599d3729c",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
+            "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
+            "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
+            "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
+            "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "orchestra/testbench": "~3.5"
+        },
+        "time": "2018-11-23T07:08:17+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1-dev"
+            },
+            "laravel": {
+                "providers": [
+                    "Alexwijn\\Select2\\Select2ServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Alexwijn\\Select2\\": "src/"
+            },
+            "files": [
+                "helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Alex Wijnholds",
+                "email": "info@asclub.eu"
+            }
+        ],
+        "description": "jQuery Select2 API for Laravel 5",
+        "keywords": [
+            "jquery",
+            "laravel",
+            "select2"
         ]
     }
 ]

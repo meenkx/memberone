@@ -68,7 +68,7 @@ class ShopController extends Controller
     {
         DB::table('ProductFromShop')->where('PromotionId','=',$request->input('PromotionId'))->delete();
         Alert::success('success', 'ลบโปรโมชั่นเรียบร้อยครับ');
-        return redirect('/shop/detail');
+        return redirect('/shop/editPromotion?user=1&&shopid=4');
     }
 
     public function addPromotion(Request $request)
@@ -98,7 +98,7 @@ class ShopController extends Controller
         ]);
 
         Alert::success('success', 'เพิ่มโปรโมชั่นเรียบร้อยครับ');
-        return redirect('/shop/detail');
+        return redirect('/shop/editPromotion?user=1&&shopid=4');
     }
 
     public function addShopQr(Request $request)
