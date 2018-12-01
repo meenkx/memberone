@@ -36,7 +36,7 @@
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     }
                 });
-                axios.post('/shop/addshop', {
+                axios.post('/shop/addShopQr', {
                     shop: $("#codeqr").val(),
                     user: 1,
                 })

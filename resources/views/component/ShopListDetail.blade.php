@@ -29,8 +29,8 @@
             <div class="shadow-md shopLabel ad_pad">
                 <div class="row" style="width: 365px !important">
                     <div class="col-4">
-                        {{--<img src="{{ $shops->ShopImg }}" style="top: -30px; position: relative; width: 110px !important" />--}}
-                        <img src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89%E0%B9%80%E0%B8%84%E0%B9%80%E0%B8%AD%E0%B8%9F%E0%B8%8B%E0%B8%B5.png" style="top: -30px; position: relative; width: 110px !important" />
+                        <img src="{{ $shops->ShopImg }}" style="top: -30px; position: relative; width: 110px !important;border-radius:50px" />
+                        {{-- <img src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B9%89%E0%B9%80%E0%B8%84%E0%B9%80%E0%B8%AD%E0%B8%9F%E0%B8%8B%E0%B8%B5.png" style="top: -30px; position: relative; width: 110px !important" /> --}}
                     </div>
                     <div class="col-6 rm_pad" style="margin: 10px 0">
                         <nav><h3 style="font-size: 18px; font-weight: bold; margin-bottom: 10px">{{ $shops->ShopName }}</h3></nav>
@@ -66,7 +66,7 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        axios.post('/shop/addshop', {
+        axios.post('/shop/addShop', {
             shop: data,
             user: 1,
         })

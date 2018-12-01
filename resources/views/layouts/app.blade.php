@@ -53,6 +53,12 @@
                                         <i class="fas fa-qrcode" style="font-size: 28px; color: #5F696C; margin-top: 10px;"></i>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="display: inline-grid;text-align: center;width: 90px">
+                                        <span>Logout</span>
+                                        <i class="fas fa-sign-out-alt" style="font-size: 28px; color: #5F696C; margin-top: 10px;"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                    {{--<form class="form-inline">--}}
@@ -78,6 +84,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpldfy9RKA0dyKispih3k9POKNij2Od8&callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <!-- Include this after the sweet alert js file -->
+    @include('sweet::alert')
 
     <script>
         $(function() {

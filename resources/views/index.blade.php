@@ -50,6 +50,13 @@
                 <div class="title" style="margin: 0px 250px;">
                     โปรแกรมทดลองนี้เป็นโปรแกรมทดลองของ member one web application สะสมแต้ม ดำเนินการเพื่อส่งในวิชาเรียน Software Engineering or CPE327 class.
                 </div>
+                <div style="margin: 0px 250px;font-size:35px;margin-top:50px">
+                    <p>59070501007   นาย จักรภัทร ลุกเซ็น</p>
+                    <p>59070501027   นาย ณัฐพัชร์ จักรเพ็ชร์</p>
+                    <p>59070501036   นาย ธนมงคล แย้มเดช</p>
+                    <p>59070501040   นาย ธีรภัทร ดวงกองเงิน</p>
+                    <p>59070501052   นาย พงศธร จุ่งรุ่งเรือง </p>                   
+                </div>
             </div>
             <div class="col-12" style="margin-top: 50px;">
                 <a href="/customer/"><button type="button" class="btn btn-primary" style="width: 300px;height: 50px;font-size: 25px">หน้าของ customer</button></a>

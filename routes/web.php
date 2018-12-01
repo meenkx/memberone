@@ -60,7 +60,10 @@ Route::group(['prefix' => 'shop'], function () {
     })->name('/');
 
     Route::get('/detail', 'ShopController@getshopDetail')->name('shopDetail');
-    Route::post('/addshop', 'ShopController@addShop')->name('addShop');
+    Route::post('/addShop', 'ShopController@addShop')->name('addShop');
+    Route::post('/deletePromotion', 'ShopController@deletePromotion')->name('deletePromotion');
+    Route::post('/addPromotion', 'ShopController@addPromotion')->name('addPromotion');
+    Route::post('/addShopQr', 'ShopController@addShopQr')->name('addShopQr');
     Route::post('/editInformation', 'ShopController@editInformation')->name('editInformation');
     Route::post('/editPicture', 'ShopController@editPicture')->name('editPicture');
     Route::get('/editPromotion', 'ShopController@editPromotion')->name('editPromotion');

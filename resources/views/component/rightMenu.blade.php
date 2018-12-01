@@ -40,7 +40,7 @@
             <nav style="width: 50%;text-align: right;font-size: 18px">Thanamongkhon Yamdej</nav>
         </nav>
         <nav style="background-color: #D1F4FA;padding: 10px">
-            <nav style="font-size: 30px;color: #EA8A8A;font-weight: bold;margin-top: 20px;text-align: center">คะแนน : 999,999 แต้ม</nav>
+            <nav style="font-size: 30px;color: #EA8A8A;font-weight: bold;margin-top: 20px;text-align: center">คะแนน : ...... แต้ม</nav>
             <hr>
             {{--<img src="{{ asset('/img/menuu.png') }}" alt="">--}}
         </nav>

@@ -176,6 +176,7 @@ return [
         Hedii\ArtisanLogCleaner\ArtisanLogCleanerServiceProvider::class,
         Bodunde\GoogleGeocoder\GeocoderServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
     ],
 
     /*
@@ -226,6 +227,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'GMaps' => FarhanWazir\GoogleMaps\Facades\GMapsFacade::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
     ],
 
 ];

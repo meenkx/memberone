@@ -2,7 +2,13 @@
 
 @section("content")
 
-    <div class="row" style="background-image: linear-gradient(#FDE2E2,#A6E5F0) ;">
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
+
+    <div class="row" style="background-image: linear-gradient(#FDE2E2,#A6E5F0) ;height:110%">
         @foreach($data as $datas)
         <div class="col-6">
             <div>
@@ -52,17 +58,19 @@
         </div>
         </div>
         </div>
-        <section>
-            <div style="margin:20px 65px;background-color:white;padding:20px;border-radius:10px">
-            <nav style="color:#CE2929;fontSize:25px">{{$datas->PromotionName}}</nav>
-            <nav>แต้มที่ต้องใช้ : {{$datas->PointPromotion}} แต้ม | ครบ {{$datas->StampPromotion}} ดาว</nav>
-            <nav style="color:#CE2929">ลายละเอียด</nav>
-            <nav>
-                <textarea style="width: 100%;border: 1px solid;border-radius: 10px;padding: 10px;">{{$datas->PromotionDetail}}</textarea>
-            </nav>
-            </div>
-        </section>
 
+            @foreach($promo as $promos)
+                <section>
+                    <div style="margin:20px 65px;background-color:white;padding:20px;border-radius:10px">
+                        <nav style="color:#CE2929;fontSize:25px">{{$promos->PromotionName}}</nav>
+                        <nav>แต้มที่ต้องใช้ : {{$promos->PointPromotion}} แต้ม | ครบ {{$promos->StampPromotion}} ดาว</nav>
+                        <nav style="color:#CE2929">ลายละเอียด</nav>
+                        <nav>
+                            <textarea style="width: 100%;border: 1px solid;border-radius: 10px;padding: 10px;">{{$promos->PromotionDetail}}</textarea>
+                        </nav>
+                    </div>
+                </section>
+            @endforeach
         </div>
         @endforeach
     </div>

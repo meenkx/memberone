@@ -53832,7 +53832,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                     'X-CSRF-TOKEN': __WEBPACK_IMPORTED_MODULE_1_jquery___default()('meta[name="csrf-token"]').attr('content')
                 }
             });
-            axios.post('/shop/addshop', {
+            axios.post('/shop/addShopQr', {
                 shop: __WEBPACK_IMPORTED_MODULE_1_jquery___default()("#codeqr").val(),
                 user: 1
             }).then(function (response) {
@@ -53844,6 +53844,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         text: 'คุณมีร้านนี้ในกระเป๋าสะสมเรียบร้อย ( คุณได้รับ 1 สแตมป์ และ 5 point )',
                         footer: '<a href>หากมีปัญหาในการเพิ่มข้อมูลร้าน โปรดติดต่อสอบถาม</a>'
                     });
+                    window.onload = function () {
+                        if (!window.location.hash) {
+                            window.location = window.location + '#loaded';
+                            window.location.reload();
+                        }
+                    };
                 } else if (response.data == 'success0') {
                     __WEBPACK_IMPORTED_MODULE_2_sweetalert2___default()({
                         type: 'success',
@@ -53851,6 +53857,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         text: 'คุณมีร้านใหม่นี้ ในกระเป๋าสะสมเรียบร้อย',
                         footer: '<a href>หากมีปัญหาในการเพิ่มข้อมูลร้าน โปรดติดต่อสอบถาม</a>'
                     });
+                    window.onload = function () {
+                        if (!window.location.hash) {
+                            window.location = window.location + '#loaded';
+                            window.location.reload();
+                        }
+                    };
                 } else if (response.data == 'empty') {
                     __WEBPACK_IMPORTED_MODULE_2_sweetalert2___default()({
                         type: 'error',
@@ -53858,6 +53870,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         text: 'กรุณาตรวจสอบข้อมูลใหม่ครับ',
                         footer: '<a href>หากมีปัญหาในการเพิ่มข้อมูลร้าน โปรดติดต่อสอบถาม</a>'
                     });
+                    window.onload = function () {
+                        if (!window.location.hash) {
+                            window.location = window.location + '#loaded';
+                            window.location.reload();
+                        }
+                    };
                 }
             }).catch(function (error) {
                 console.log(error);
